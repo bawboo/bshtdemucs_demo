@@ -38,6 +38,8 @@
 </head>
 <body>
     <h1>BS-HTDemucs Source Separation Demo</h1>
+
+    <!-- Dongurikorokoro Demo -->
     <table>
         <thead>
             <tr>
@@ -108,12 +110,174 @@
             </tr>
             <tr>
                 <td>Vocal percussion</td>
-                <td><audio controls><source src="audio_file/ground_truth/dongurikorokoro/dongurikorokoro_gt_vocal_percussion.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/ground_truth/dongurikorokoro/dongurikorokoro_gt_vp.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
                 <td><audio controls><source src="audio_file/htdemucs/dongurikorokoro/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
                 <td><audio controls><source src="audio_file/bsroformer/dongurikorokoro/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
                 <td><audio controls><source src="audio_file/bshtdemucs/dongurikorokoro/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
                 <td><audio controls><source src="audio_file/htdemucs_finetuned/dongurikorokoro/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
                 <td><audio controls><source src="audio_file/bshtdemucs_finetuned/dongurikorokoro/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Hiraitahiraita Demo -->
+    <table>
+        <thead>
+            <tr>
+                <th>Mixture</th>
+                <th>Voice part</th>
+                <th>Ground Truth</th>
+                <th>HTDemucs</th>
+                <th>BS-Roformer</th>
+                <th>BS-HTDemucs</th>
+                <th>HTDemucs(finetuned)</th>
+                <th>BS-HTDemucs(finetuned)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mixture-cell" rowspan="6">
+                    Hiraitahiraita<br>
+                    (ひらいたひらいた in Japanese)<br>
+                    Genre: enka<br><br>
+                    <audio controls>
+                        <source src="audio_file/source/hiraitahiraita_mixture.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td>Lead vocal</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_lead_vocal.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Soprano</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_soprano.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Alto</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_alto.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Tenor</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_tenor.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Bass</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_bass.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Vocal percussion</td>
+                <td><audio controls><source src="audio_file/ground_truth/hiraitahiraita/hiraitahiraita_gt_vp.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/hiraitahiraita/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/hiraitahiraita/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/hiraitahiraita/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/hiraitahiraita/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/hiraitahiraita/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Otamajakushi Demo -->
+    <table>
+        <thead>
+            <tr>
+                <th>Mixture</th>
+                <th>Voice part</th>
+                <th>Ground Truth</th>
+                <th>HTDemucs</th>
+                <th>BS-Roformer</th>
+                <th>BS-HTDemucs</th>
+                <th>HTDemucs(finetuned)</th>
+                <th>BS-HTDemucs(finetuned)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mixture-cell" rowspan="6">
+                    Otamajakushi<br>
+                    (お玉じゃくし in Japanese)<br>
+                    Genre: jazz<br><br>
+                    <audio controls>
+                        <source src="audio_file/source/otamajakushi_mixture.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td>Lead vocal</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_lead_vocal.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/lead_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Soprano</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_soprano.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/soprano_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Alto</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_alto.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/alto_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Tenor</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_tenor.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/tenor_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Bass</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_bass.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/bass_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+            </tr>
+            <tr>
+                <td>Vocal percussion</td>
+                <td><audio controls><source src="audio_file/ground_truth/otamajakushi/otamajakushi_gt_vp.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs/otamajakushi/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bsroformer/otamajakushi/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs/otamajakushi/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/htdemucs_finetuned/otamajakushi/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+                <td><audio controls><source src="audio_file/bshtdemucs_finetuned/otamajakushi/vp_example.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
             </tr>
         </tbody>
     </table>
